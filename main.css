@@ -1,10 +1,17 @@
 * {
+    --color-blue-1: #364F6B;
+    --color-blue-2: #3FC1C9;
+    --color-white-3: #F5F5F5;
+    --color-red-4: #FC5185;
+
     font-family: 'EB Garamond', serif;
     font-weight: 400;
-    color: #364F6B;
+    color: var(--color-blue-1) ;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    
 }
  
 header {
