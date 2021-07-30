@@ -13,7 +13,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     
 }
 
@@ -40,8 +39,6 @@ header {
     justify-content: flex-start;
     align-items: center;
     gap: 60px;
-
-    
 
 }
 
@@ -107,6 +104,7 @@ header {
 }
 
 .container_category_element{
+    
     border-radius: 25px;
     background-color: white;
     width: 120px;
@@ -121,6 +119,15 @@ header {
     -webkit-box-shadow: -3px 4px 20px -10px rgba(54,79,107,1);
     -moz-box-shadow: -3px 4px 20px -10px rgba(54,79,107,1);
     box-shadow: -3px 4px 20px -10px rgba(54,79,107,1);
+    transition-duration: 2s;
+}
+
+.container_category_element:hover {
+    color: var(--color-red-4);
+    -webkit-box-shadow: inset 0px 0px 15px -10px rgba(54,79,107,1);
+    -moz-box-shadow: inset 0px 0px 15px -10px rgba(54,79,107,1);
+    box-shadow: inset 0px 0px 15px -10px rgba(54,79,107,1);
+
 }
 
 /**banner*/
@@ -155,13 +162,19 @@ header {
     letter-spacing: 5px;
     
     font-family: var(--font-dancing-s);
+    transition: 1s;
+}
+
+.container_banner_button:hover {
+    background-color: rgba(54, 79, 107, 1) ;
 }
 
 /**icons forms*/
 .container_principal_i {
     overflow-x: scroll;
     position:relative;
-    height: 60px;
+    height: 70px;
+    margin-top: 40px;
 }
 
 /*no mostrar el srcollbar*/
@@ -173,13 +186,19 @@ header {
     width: 650px;
     display: flex;
     justify-content: space-around;
-    margin: 30px 10px;
+    margin: 0px 10px;
 
 }
 
 .container_icons_elements{
     width: 52px;
     height: 23px;
+
+    transition: 1.5s;
+}
+
+.container_icons_elements:hover{
+    transform: scale(1.3);
 }
 
 /**button*/
@@ -191,7 +210,7 @@ header {
    width: 100%;
    background-color: var(--color-blue-1);
    height: 1px;
-
+   margin-bottom: 150px;
    position: relative;
 }
 
@@ -207,24 +226,29 @@ header {
     position: absolute;
     top: -19px;
     left: calc(50% - 65px );
+
+    transition: all 1s 0.5s ease-out;
 }
+ .container_button_see:hover {
+    background-color: var(--color-blue-1);
+    color: white;
+ }
 
 /*Content secundary*/
-
+/**title*/
 .container_secondary_title{
-    margin-top: 80px;
+    margin-top: 77px;
 }
 
 .container_secondary_line{
     width: 100%;
    background-color: var(--color-blue-1);
    height: 1px;
-
    position: relative;
 }
 
 .container_secondary_text{
-    width: 100px;
+    width: 123px;
     height: 38px;
     padding-left: 5px;
     background-color: white;
@@ -237,4 +261,41 @@ header {
 
     font-family: var(--font-dancing-s);
     font-size: 20px;
+}
+
+/**elements*/
+.container_secondary{
+    margin-top: calc(50% - 120px);
+    overflow-x: scroll;
+    position:relative;
+    height: 182px;
+}
+
+.container_secondary::-webkit-scrollbar { 
+    display: none;
+}
+
+.container_secondary_category {
+    display: flex;
+    justify-content: space-between;
+    gap: 17px;
+    white-space:nowrap;
+    width: 700px;
+    height: 150px;
+    margin: 0px 20px;
+}
+
+.container_secondary_element {
+    width: 150px;
+    height: 150px;
+
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    -webkit-box-shadow: -4px 17px 22px -6px rgba(54,79,107,1);
+    -moz-box-shadow: -4px 17px 22px -6px rgba(54,79,107,1);
+    box-shadow: -4px 17px 22px -6px rgba(54,79,107,1);
 }
