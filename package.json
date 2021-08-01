@@ -1,0 +1,22 @@
+{
+  "name": "weblentes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeanBayer/lenttes.git"
+  },
+  "author": "jean_bayer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeanBayer/lenttes/issues"
+  },
+  "homepage": "https://github.com/JeanBayer/lenttes#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
